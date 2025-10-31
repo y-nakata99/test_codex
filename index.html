@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDoリスト</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>ToDoリスト</h1>
+    <form id="task-form" autocomplete="off">
+      <label class="sr-only" for="task-input">新しいタスク</label>
+      <input
+        id="task-input"
+        type="text"
+        name="task"
+        placeholder="タスクを入力..."
+        required
+      />
+      <button type="submit">追加</button>
+    </form>
+
+    <section>
+      <ul id="task-list" aria-live="polite"></ul>
+    </section>
+
+    <template id="task-template">
+      <li class="task">
+        <label>
+          <input type="checkbox" class="task-toggle" />
+          <span class="task-text"></span>
+        </label>
+        <button type="button" class="task-delete" aria-label="タスクを削除">✕</button>
+      </li>
+    </template>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
