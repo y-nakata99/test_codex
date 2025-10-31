@@ -45,7 +45,7 @@ button[type="submit"] {
   padding: 0.75rem 1.25rem;
   border: none;
   border-radius: 0.75rem;
-  background: #9acd32;
+  background: #3b82f6;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -54,7 +54,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover,
 button[type="submit"]:focus {
-  background: #7fbf2a;
+  background: #2563eb;
 }
 
 #task-list {
